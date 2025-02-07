@@ -16,7 +16,6 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
   const [state, formAction] = useActionState(createInvoice, initialState);
 
-  console.log(state);
 
   return (
     <form action={formAction}>
